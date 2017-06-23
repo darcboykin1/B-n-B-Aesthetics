@@ -1,6 +1,7 @@
 * {
 	padding: 0px;
 	margin: 0px;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -9,7 +10,7 @@ html, body {
 }
 
 body {
-	position: absolute;
+	
 }
 
 .header {
@@ -30,11 +31,11 @@ body {
 }
 
 .mobilemenu {
-	position: absolute;
+	position: relative;
 	width: 100px;
 	height: 100px;
-	right: -10px;
-	background-color: red;
+	left: -10px;
+	border: 1px solid red;
 	list-style: none;
 	text-align: center;
 }
@@ -55,13 +56,18 @@ body {
 .about {
 	height: 100%;
 	width: 100%;
+	position: relative;
 }
 
 .about_summary {
+	width: 100%;
 	font-size: 30px;
 	line-height: 2;
-	width: 80%;
+	display: flex;
 	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0.5em;
 }
 
 .team {
